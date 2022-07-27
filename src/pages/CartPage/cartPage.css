@@ -1,0 +1,130 @@
+.messagCart {
+  margin-top: 50px;
+}
+
+.emptyCart {
+  font-size: 1.5rem;
+  background-color: rgb(255 228 230);
+  color: rgb(190 18 60);
+  padding: 1rem;
+}
+
+.ToHomePage {
+  background-color: rgb(29 78 216);
+  padding: 1rem;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.cartList {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 1rem;
+  width: 90vw;
+}
+
+.cartDetail {
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  background-color: #fff;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0/0.1), 0 8px 10px -6px rgb(0 0 0/0.1);
+}
+
+.cartImage {
+  width: 250px;
+  height: 250px;
+}
+
+.cartImage img {
+  width: 100%;
+  height: auto;
+}
+
+.ItemPrice {
+  text-decoration: line-through;
+}
+
+.btnCart {
+  margin-right: 1rem;
+}
+
+.btnCart button {
+  outline: none;
+  border: none;
+  border: 1px solid #6d28d9;
+  color: #6d28d9;
+  padding: 5px 10px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.btnCart button:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+.btnCart button:last-child {
+  border-radius: 0 5px 5px 0;
+}
+
+.btnCart button:nth-child(2) {
+  border-left: 0;
+  border-right: 0;
+}
+.cartSummery {
+  height: 250px;
+  box-shadow: 0 20px 25px -5px rgb(0 0 0/0.1), 0 8px 10px -6px rgb(0 0 0/0.1);
+  background-color: #fff;
+}
+
+.cartSummery h2 {
+  margin-top: 1rem;
+}
+
+.summeryTitle {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.summeryItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+  white-space: nowrap;
+}
+
+.summeryItem.net {
+  border-top: 1px solid #ccc;
+}
+
+.summeryTotal {
+  margin-top: 0.5rem;
+}
+
+.primary-checkout {
+  display: block;
+  background-color: #6d25d9;
+  color: #ffff;
+  margin-top: 10px;
+  margin: auto;
+  width: 95%;
+  padding: 15px 5px;
+  border-radius: 10px;
+}
+@media screen and (max-width: 768px) {
+  .cartList {
+    grid-template-columns: 1fr;
+  }
+  .cartDetail {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+  }
+}

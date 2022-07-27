@@ -1,0 +1,160 @@
+.mainNavigation {
+  background-color: #fff;
+  width: 100%;
+  height: 4.5rem;
+  border-bottom: 1px solid #ccc;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.navbarList {
+  display: flex;
+  align-items: center;
+}
+
+.navbarList ul {
+  max-height: 0;
+  overflow: hidden;
+  background-color: #fff;
+}
+.navbarList li a {
+  list-style: none;
+  color: black;
+}
+.navbarList.expand ul {
+  max-height: 100vh;
+  top: 0;
+  height: 100%;
+  display: flex;
+  outline: 0;
+  z-index: 1200;
+  position: fixed;
+  overflow-y: auto;
+  flex-direction: column;
+  width: 312px;
+  padding: 1rem;
+}
+
+.navbarList.expand ul li {
+  margin-top: 2rem;
+}
+
+.navbarCloseExpand {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.close {
+  font-size: 1.5rem;
+}
+
+.navCart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cartBuy {
+  width: 25px;
+  height: 25px;
+  margin-right: 2rem;
+}
+.navSummery {
+  position: relative;
+}
+
+.navSummery span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: red;
+  padding: 0.7rem;
+  border-radius: 50%;
+  color: #fff;
+  width: 15px;
+  height: 15px;
+  top: -15px;
+  right: 20px;
+}
+
+.navLogin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
+.navLogin a {
+  font-size: 20px;
+}
+
+.loginIcon {
+  width: 25px;
+  height: 25px;
+  margin: 1rem;
+}
+.user {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+.navToggler {
+  cursor: pointer;
+}
+
+.navToggler .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #6d28d9;
+  margin: 5px 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    max-width: 1200px;
+    margin: auto;
+  }
+  .navToggler {
+    display: none;
+  }
+  .navbarClose {
+    display: none;
+  }
+  .navbarList ul {
+    max-height: 100vh;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbarList ul li {
+    padding: 1rem;
+  }
+  .navbarList.expand ul {
+    max-height: 0;
+    top: 0;
+    height: 100%;
+    display: flex;
+    outline: 0;
+    z-index: 1200;
+    position: relative;
+    top: -15px;
+    overflow: visible;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    padding: 1rem;
+    background-color: none;
+  }
+  .navbarCloseExpand {
+    display: none;
+  }
+}
